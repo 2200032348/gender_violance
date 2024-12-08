@@ -1,0 +1,98 @@
+/* Root styles */
+:root {
+    --primary-color: #4b6cb7;
+    --secondary-color: #182848;
+    --highlight-color: #f04e4e;
+    --text-color: #ffffff;
+    --background-color: #1a1a1a;
+    --tile-hover-color: rgba(255, 255, 255, 0.1);
+    --transition-speed: 0.3s;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* General body styling */
+  body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Header styles */
+  .header {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiles Section */
+  .tiles-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  
+  /* Individual Tile */
+  .tile {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    text-align: center;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    transition: transform var(--transition-speed), background var(--transition-speed);
+    cursor: pointer;
+  }
+  
+  .tile:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  }
+  
+  .tile h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .tile p {
+    font-size: 1em;
+    margin: 10px 0 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tiles-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tile {
+      width: 90%;
+      height: auto;
+      padding: 20px;
+    }
+  }
+  
