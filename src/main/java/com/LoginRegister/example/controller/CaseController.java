@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/cases")
-@CrossOrigin(origins = "*")  // Ensure CORS is configured for your frontend
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class CaseController {
 
     @Autowired
