@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/sessions")
-@CrossOrigin(origins = "http://localhost:5177") // Change to your frontend URL
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class SessionController {
 
     private final SessionService sessionService;
