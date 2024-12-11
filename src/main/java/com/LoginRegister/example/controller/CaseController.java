@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/cases")
-@CrossOrigin(origins = "http://localhost:5177")  // Ensure CORS is configured for your frontend
+@CrossOrigin(origins = "*")  // Ensure CORS is configured for your frontend
 public class CaseController {
 
     @Autowired
