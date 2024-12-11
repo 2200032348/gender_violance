@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/legaladvisors")
-@CrossOrigin(origins = "http://localhost:5177") // Adjust if needed
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class LegalAdvisorController {
 
     private final LegalAdvisorService legalAdvisorService;
