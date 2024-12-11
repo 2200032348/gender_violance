@@ -14,7 +14,7 @@ import com.LoginRegister.example.service.UserService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5177")
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class UsersController {
     @Autowired
     private UserService userService;
