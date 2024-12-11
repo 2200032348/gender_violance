@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/legal-rights")
-@CrossOrigin(origins = "http://localhost:5177") // Allow React Frontend
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class LegalRightsController {
 
     private final LegalRightsService legalRightsService;
