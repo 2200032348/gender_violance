@@ -10,7 +10,6 @@ import com.LoginRegister.example.service.AdminService;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin(origins = "*") // Adjust origin for your frontend
 public class AdminController {
 
     @Autowired
