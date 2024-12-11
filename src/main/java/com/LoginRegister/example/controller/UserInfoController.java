@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/userinfo")
-@CrossOrigin(origins = "http://localhost:5177") // Allow requests from React
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class UserInfoController {
 
     @Autowired
