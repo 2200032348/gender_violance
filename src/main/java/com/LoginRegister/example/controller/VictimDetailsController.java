@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/victim-details")
-@CrossOrigin(origins = "http://localhost:5177") // Allow requests from frontend
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class VictimDetailsController {
 
     @Autowired
