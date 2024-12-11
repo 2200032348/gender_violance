@@ -10,6 +10,7 @@ import com.LoginRegister.example.service.AdminService;
 
 @RestController
 @RequestMapping("/api/admin")
+@CrossOrigin(origins = "https://tiny-axolotl-983850.netlify.app")
 public class AdminController {
 
     @Autowired
